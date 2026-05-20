@@ -1,10 +1,8 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import '../styles/Header.css';
 
 function Header() {
-  const navigate = useNavigate();
   const { user } = useSelector(state => state.auth);
 
   return (
